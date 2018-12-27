@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#086276</color>
+    <color name="colorPrimaryDark">#086276</color>
+    <color name="colorAccent">#086276</color>
+    <color name="text_Primary">#ffffff</color>
+    <color name="text_secondary">#000000</color>
+    <color name="email_bar">#034453</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="facebook_color">#3b5998</color>
+</resources>

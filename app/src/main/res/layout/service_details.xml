@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgound"
+    tools:context="naveen.agnosbeta.agnos.service_details">
+
+    <ProgressBar
+        android:id="@+id/reg_progress_service_details"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="289dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/service_details_request_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/user_email_about4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView5"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/back_about4"
+            android:background="@color/colorAccent"
+            android:fontFamily="@font/almendra_display"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/cast_expanded_controller_progress_text_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <Button
+            android:id="@+id/request_button_service_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:background="#39686f"
+            android:text="Send Request for a project"
+            android:textColor="#fff"
+            android:textColorLink="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/user_email_about4"
+            android:layout_below="@+id/textView5"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@android:drawable/ic_input_get"
+            android:fontFamily="@font/cinzel_decorative_bold"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Category of Project"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/back_about4"
+            android:background="@color/place_autocomplete_prediction_primary_text"
+            android:padding="10dp"
+            android:text="* Please select one of our service to refer a request for the project registration. And enter the project description below."
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/product_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/request_button_service_details"
+            android:layout_alignEnd="@+id/user_email_about4"
+            android:layout_below="@+id/textView10"
+            android:fontFamily="monospace"
+            android:gravity="top"
+            android:hint="Description of project here.."
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="8sp"
+            android:padding="10dp"
+            android:paddingStart="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/service_select"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/user_email_about4"
+            android:layout_below="@+id/textView9"
+            android:popupBackground="@color/colorAccent"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            android:textDirection="firstStrongLtr" />
+
+        <ImageView
+            android:id="@+id/back_about4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorAccent"
+            android:contentDescription="TODO"
+            android:onClick="on_back_service"
+            android:padding="5dp"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/service_select"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@android:drawable/ic_input_get"
+            android:fontFamily="@font/cinzel_decorative_bold"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Portrayal of project"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

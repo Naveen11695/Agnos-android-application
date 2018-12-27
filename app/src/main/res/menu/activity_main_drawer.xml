@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="User details">
+            <item
+                android:id="@+id/nav_Home"
+                android:icon="@drawable/home"
+                android:title="Home" />
+        <item
+            android:id="@+id/nav_first_layout"
+            android:icon="@drawable/pesonal_detail"
+            android:title="Personal Details" />
+        </item>
+    </group>
+    <item android:title="Password">
+        <menu>
+            <item
+                android:id="@+id/change_pass"
+                android:icon="@android:drawable/ic_partial_secure"
+                android:title="Change Password" />
+        </menu>
+    </item>
+    <item android:title="Services">
+        <menu>
+            <item
+                android:id="@+id/nav_services"
+                android:icon="@android:drawable/ic_menu_myplaces"
+                android:title="Our Services" />
+
+        </menu>
+    </item>
+    <item android:title="Contact us">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_input_get"
+                android:title="About us" />
+            <item
+                android:id="@+id/locate"
+                android:icon="@android:drawable/ic_dialog_map"
+                android:title="Locate us" />
+        </menu>
+    </item>
+    <item android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="Help and feedback" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+    <item android:title="Sign out">
+        <menu>
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Log out" />
+        </menu>
+    </item>
+
+</menu>

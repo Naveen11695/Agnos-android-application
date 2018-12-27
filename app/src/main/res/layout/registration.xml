@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/backgound"
+tools:context="naveen.agnosbeta.agnos.registration">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/imageViewAbout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:onClick="on_back_register"
+            android:padding="5dp"
+            app:srcCompat="@drawable/back" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/nav_user_img_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reg_progress"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_margin="10dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:src="@drawable/siginup" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/registration_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_weight="0.61"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.24"
+            android:background="@drawable/backgound"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/place_autocomplete_prediction_primary_text"
+                android:padding="10dp"
+                android:text="@string/registration_message_1"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent"
+                android:drawableLeft="@android:drawable/ic_input_get"
+                android:fontFamily="@font/cinzel_decorative_bold"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:paddingTop="10dp"
+                android:text="Primary Details"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/F_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_toStartOf="@+id/L_name"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                    android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="@color/text_secondary" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/L_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                    android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:padding="16dp"
+                    android:textColor="@color/text_secondary" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/Age"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                    android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:numeric="integer"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="@color/text_secondary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+                    android:drawableStart="@android:drawable/ic_menu_call"
+                    android:hint="  Contact No."
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="#ffc" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/text_Primary"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/sym_action_email"
+                    android:drawableStart="@android:drawable/sym_action_email"
+                    android:hint="  Email"
+                    android:padding="16dp"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="#ffc" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent"
+                android:drawableLeft="@android:drawable/ic_input_get"
+                android:fontFamily="@font/cinzel_decorative_bold"
+                android:gravity="center_vertical"
+                android:text="Company Details"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/place_autocomplete_prediction_primary_text"
+                android:padding="10dp"
+                android:text="@string/registration_message_2"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/com_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                    android:drawableStart="@android:drawable/ic_menu_my_calendar"
+                    android:hint="Business / Company name "
+                    android:padding="16dp"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="#ffc" />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/office_ph"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_call"
+                    android:drawableStart="@android:drawable/ic_menu_call"
+                    android:hint="  Contact No."
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:singleLine="true"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="#ffc" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_Primary"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/office_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/sym_action_email"
+                    android:drawableStart="@android:drawable/sym_action_email"
+                    android:hint="Email"
+                    android:padding="16dp"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="#ffc" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_Primary"
+                android:paddingBottom="30dp"
+                android:paddingTop="30dp"
+                android:textColorHint="@color/text_secondary">
+
+                <EditText
+                    android:id="@+id/office_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/text_Primary"
+                    android:drawableLeft="@android:drawable/ic_menu_mapmode"
+                    android:drawableStart="@android:drawable/ic_menu_mapmode"
+                    android:hint="Office Address"
+                    android:padding="16dp"
+                    android:textColor="@color/text_secondary"
+                    android:textColorHint="#ffc" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent"
+                android:drawableLeft="@android:drawable/ic_input_get"
+                android:fontFamily="@font/cinzel_decorative_bold"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:text="Member Of C.S.I "
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView3"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:id="@+id/radio_yes"
+                    style="@android:style/Widget.Material.CompoundButton.RadioButton"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/text_Primary"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="yes"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_secondary"
+                    android:textColorLink="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_no"
+                    style="@android:style/Widget.Material.CompoundButton.RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/text_Primary"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:text="No"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_secondary"
+                    android:textColorLink="@color/common_google_signin_btn_text_dark_default" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/save_reg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="#39686f"
+                android:text="save"
+                android:textColor="#fff"
+                android:textColorLink="@color/colorAccent" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/reg_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
