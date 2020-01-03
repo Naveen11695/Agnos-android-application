@@ -1,7 +1,7 @@
 
 # Agnos's android application
 
-This is a beta version of the android application developed for a startup company **Agnos Developers**.
+Android application developed for a startup company **Agnos Developers**.
 
 
 
