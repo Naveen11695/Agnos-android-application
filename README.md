@@ -35,14 +35,14 @@ This application is devloped for android platform with api support of v25. This 
   <a href="https://imgur.com/ElFDVip.jpg"><img src="https://imgur.com/ElFDVip.jpg" width="50"></a>
 <p><b>Appicon</b></p>
   
-<a href="https://imgur.com/qPnQFRQ.jpg"><img src="https://imgur.com/qPnQFRQ.jpg" width="250"></a>
-<a href="https://imgur.com/IXd7Cln.jpg"><img src="https://imgur.com/IXd7Cln.jpg" width="250"></a>
-<a href="https://imgur.com/BcE36GW.jpg"><img src="https://imgur.com/BcE36GW.jpg" width="250"></a>
-<a href="https://imgur.com/qyv9UnJ.jpg"><img src="https://imgur.com/qyv9UnJ.jpg" width="250"></a>
-<a href="https://imgur.com/lZ93qMe.jpg"><img src="https://imgur.com/lZ93qMe.jpg" width="250"></a>
-<a href="https://imgur.com/FBcPf2X.jpg"><img src="https://imgur.com/FBcPf2X.jpg" width="250"></a>
-<a href="https://imgur.com/0P5FNdG.jpg"><img src="https://imgur.com/0P5FNdG.jpg" width="250"></a>
-<a href="https://imgur.com/GDldnDS.jpg"><img src="https://imgur.com/GDldnDS.jpg" width="250"></a>
+<a href="https://imgur.com/qPnQFRQ.jpg"><img src="https://imgur.com/qPnQFRQ.jpg" width="100"></a>
+<a href="https://imgur.com/IXd7Cln.jpg"><img src="https://imgur.com/IXd7Cln.jpg" width="100"></a>
+<a href="https://imgur.com/BcE36GW.jpg"><img src="https://imgur.com/BcE36GW.jpg" width="100"></a>
+<a href="https://imgur.com/qyv9UnJ.jpg"><img src="https://imgur.com/qyv9UnJ.jpg" width="100"></a>
+<a href="https://imgur.com/lZ93qMe.jpg"><img src="https://imgur.com/lZ93qMe.jpg" width="100"></a>
+<a href="https://imgur.com/FBcPf2X.jpg"><img src="https://imgur.com/FBcPf2X.jpg" width="100"></a>
+<a href="https://imgur.com/0P5FNdG.jpg"><img src="https://imgur.com/0P5FNdG.jpg" width="100"></a>
+<a href="https://imgur.com/GDldnDS.jpg"><img src="https://imgur.com/GDldnDS.jpg" width="100"></a>
 </p>
 
 
